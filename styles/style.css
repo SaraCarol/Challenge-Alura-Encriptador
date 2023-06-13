@@ -141,3 +141,66 @@ main{
     background-color: white;
     top: 70%;
 }
+
+@media (max-width: 450px){
+    .text-area {
+        border: 1px;
+        resize: none;
+        position: absolute;
+        height: 38%;
+        width: 85%;
+    }
+    .informacion{
+        top: 49%;
+        left: 20%;
+    }
+    .exclamacion{
+        top: 49% ;
+    } 
+
+    .boton-desencriptar{
+        top: 53%;
+        width: 36%;
+        height: 6%;
+        left: 30%;
+    } 
+    
+    .boton-encriptar{
+        top: 53%;
+        width: 36%;
+        height: 6%;
+    }
+    .boton-copiar{
+        margin-left: 58%;
+        top: 76%;
+        width: 24%;
+        height: 4%;
+        font-size: 53%;
+    }
+    .mensaje{
+        height: 19%;
+        width: 84%;
+        margin-left: 0%;
+        margin-top: 121%;
+    }
+    .muñeco{
+        margin-left: 4%;
+        top: 66%;
+        background-color: white;
+        width: 34%
+    }
+    .mensaje-inicio{
+        margin-left: 42%;
+        font-size: 60%;
+        top: 65%;
+    }
+    .mensaje-inicio2{
+        margin-left: 48%;
+        font-size: 42%;
+        top: 72%;
+        width: 31%;
+    }
+    .mensaje-final{
+        margin: 3% 5%
+    }
+}
