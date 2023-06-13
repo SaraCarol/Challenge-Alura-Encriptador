@@ -7,7 +7,9 @@ const botonEncriptar = document.querySelector(".boton-encriptar")
 const botonDesencriptar = document.querySelector(".boton-desencriptar")
 const botonCopiar = document.querySelector(".boton-copiar")
 
+
 botonCopiar.style.display = "none"
+
 var llaves = [
     ["e", "enter"],
     ["i", "imes"],
@@ -69,15 +71,15 @@ function btnDesencriptar(){
 function mensajeFinal(resultado){
     divNoMensaje.style.display = "none"
     botonCopiar.style.display = "block"
-    classMensaje.innerHTML = resultado
+    classMensaje.value = resultado
 }
 
 //COPIAR TEXTO
 function copiarTexto(){
-    textoCopiar = classMensaje.textContent
+    textoCopiar = classMensaje.value
     navigator.clipboard.writeText(textoCopiar);
     swal('Copiado')
-    classMensaje.textContent = ""
+    classMensaje.value = ""
     divNoMensaje.style.display = "block"
     botonCopiar.style.display = "none"
 }
