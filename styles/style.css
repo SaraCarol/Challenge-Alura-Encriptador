@@ -19,7 +19,7 @@ main{
 }
 
 .text-area{
-    /*border: none;*/
+    border: none;
     resize: none;
     position: absolute;
     height: 60%;
@@ -96,7 +96,6 @@ main{
 .mensaje{
     background-color: white;
     border: none;
-    resize: none;
     border-radius: 32px;
     height: 92%;
     width: 23%;
@@ -106,12 +105,15 @@ main{
     margin-left: 64%;
     margin-top: -5%;
 }
-/*.mensaje::placeholder{
-    color: #0A3871;
+
+.mensaje-final{
+    font-size: 85%;
+    color: #495057;
+    background-color: white;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 10% 5%;
 }
-.mensaje:focus{
-    outline: none;
-}*/
 
 .muñeco{
     position: fixed;
