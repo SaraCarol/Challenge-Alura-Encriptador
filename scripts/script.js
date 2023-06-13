@@ -76,6 +76,7 @@ function mensajeFinal(resultado){
 function copiarTexto(){
     textoCopiar = classMensaje.textContent
     navigator.clipboard.writeText(textoCopiar);
+    swal('Copiado')
     classMensaje.textContent = ""
     divNoMensaje.style.display = "block"
     botonCopiar.style.display = "none"
