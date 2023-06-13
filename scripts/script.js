@@ -37,10 +37,12 @@ function encriptar(fraseEncriptar){
 }
 
 function btnEncriptar(){
-    if(textArea.value.length == 0){
+    var textoInicial = textArea.value
+    if(textoInicial.length == 0){
         swal("Ops", "Debes ingresar un texto", "warning");
     } else{
-        const textoEncriptado = encriptar(textArea.value)
+        var textoNormal = textoInicial.normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+        const textoEncriptado = encriptar(textoNormal)
         mensajeFinal(textoEncriptado)
         textArea.value = ""
     }   
@@ -58,10 +60,12 @@ function desencriptar(fraseDesencriptar){
 }
 
 function btnDesencriptar(){
-    if(textArea.value.length == 0){
+    var textoInicial = textArea.value
+    if(textoInicial.length == 0){
         swal("Ops", "Debes ingresar un texto", "warning");
     } else {
-        const textoDesencriptado = desencriptar(textArea.value)
+        var textoNormal = textoInicial.normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+        const textoDesencriptado = desencriptar(textoNormal)
         mensajeFinal(textoDesencriptado)
         textArea.value = ""
     }
