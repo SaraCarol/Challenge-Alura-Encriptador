@@ -1,5 +1,4 @@
 //ELEMENTOS HTML
-
 const classMensaje = document.querySelector(".mensaje-final")
 const textArea = document.querySelector(".text-area")
 const divNoMensaje = document.querySelector(".no-hay-mensaje")
@@ -36,9 +35,13 @@ function encriptar(fraseEncriptar){
 }
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensajeFinal(textoEncriptado)
-    textArea.value = ""
+    if(textArea.value.length == 0){
+        swal("Ops", "Debes ingresar un texto", "warning");
+    } else{
+        const textoEncriptado = encriptar(textArea.value)
+        mensajeFinal(textoEncriptado)
+        textArea.value = ""
+    }   
 }
 
 //DESENCRIPTACIÓN
@@ -53,9 +56,13 @@ function desencriptar(fraseDesencriptar){
 }
 
 function btnDesencriptar(){
-    const textoDesencriptado = desencriptar(textArea.value)
-    mensajeFinal(textoDesencriptado)
-    textArea.value = ""
+    if(textArea.value.length == 0){
+        swal("Ops", "Debes ingresar un texto", "warning");
+    } else {
+        const textoDesencriptado = desencriptar(textArea.value)
+        mensajeFinal(textoDesencriptado)
+        textArea.value = ""
+    }
 }
 
 //RESULTADO
