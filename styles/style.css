@@ -152,6 +152,29 @@ outline: none;
     top: 70%;
 }
 
+.footer-p{
+    font-size: 40%;
+    position: absolute;
+    top: 90%;
+    margin: 1%;
+}
+
+.github img{
+    width: 1.2%;
+    position: absolute;
+    top: 95%;
+    left: 2%;
+    margin: 0.2%;
+}
+
+.linkedin img{
+    width: 1.3%;
+    position: absolute;
+    top: 95%;
+    left: 4%;
+    margin: 0.2%;
+}
+
 @media (max-width: 450px){
     .text-area {
         border: 1px;
@@ -195,22 +218,39 @@ outline: none;
     }
     .muñeco{
         margin-left: 4%;
-        top: 66%;
+        top: 71%;
         background-color: white;
-        width: 34%
+        width: 30%
     }
     .mensaje-inicio{
-        margin-left: 42%;
+        margin-left: 36%;
         font-size: 60%;
-        top: 65%;
+        top: 69%;
     }
     .mensaje-inicio2{
-        margin-left: 48%;
-        font-size: 42%;
-        top: 72%;
+        margin-left: 41%;
+        font-size: 40%;
+        top: 77%;
         width: 31%;
     }
     .mensaje-final{
         margin: 3% 5%
+    }
+
+    .footer-p{
+        top: 95%;
+        font-size: 50%;
+    }
+
+    .github img{
+        top: 95%;
+        width: 5%;
+        left: 45%;
+    }
+
+    .linkedin img{
+        top: 95%;
+        width: 6%;
+        left: 53%;
     }
 }
